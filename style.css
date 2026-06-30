@@ -322,7 +322,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .testimonial-stars {
   color: #C9B896; font-size: 0.8rem; margin-bottom: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 2px; display: flex; gap: 3px;
 }
 .testimonial-text {
   color: rgba(237,235,232,0.65); font-style: italic;
