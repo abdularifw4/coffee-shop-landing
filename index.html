@@ -7,20 +7,20 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo">☕ Brewed<span>Awakening</span></a>
+      <a href="#" class="logo">Brewed<span>.</span></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#menu">Menu</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Visit</a></li>
       </ul>
-      <a href="#contact" class="btn btn-nav">Order Now</a>
+      <a href="#contact" class="btn btn-nav">Reserve Table</a>
       <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
     </div>
   </nav>
@@ -31,100 +31,117 @@
       <li><a href="#menu">Menu</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#contact" class="btn btn-full">Order Now</a></li>
+      <li><a href="#contact">Visit</a></li>
+      <li><a href="#contact" class="btn btn-full">Reserve Table</a></li>
     </ul>
   </div>
 
   <!-- Hero -->
   <section class="hero" id="home">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&h=900&fit=crop&q=80" alt="Latte Art" class="hero-bg" />
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <p class="hero-sub">Specialty Coffee · Jakarta</p>
-      <h1>Life Begins After<br /><em>Coffee</em></h1>
-      <p class="hero-desc">Single-origin beans, roasted in small batches, brewed to perfection. Every cup tells a story from farm to cup.</p>
+      <p class="hero-tag">Specialty Coffee · Jakarta</p>
+      <h1>Where Every Cup<br>Tells a <em>Story</em></h1>
+      <p class="hero-desc">Single-origin beans from Indonesian highlands, roasted in-house, brewed with precision. Welcome to your new favorite coffee corner.</p>
       <div class="hero-actions">
-        <a href="#menu" class="btn btn-primary">Explore Menu</a>
-        <a href="#about" class="btn btn-outline">Our Story</a>
+        <a href="#menu" class="btn btn-primary">See the Menu</a>
+        <a href="#about" class="btn btn-glass">Our Story →</a>
       </div>
     </div>
-    <div class="hero-scroll">↓</div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
   </section>
 
   <!-- Stats -->
   <section class="stats">
     <div class="container stats-grid">
       <div class="stat">
-        <span class="stat-number">12+</span>
+        <span class="stat-num">12</span>
         <span class="stat-label">Single-Origin Beans</span>
       </div>
+      <div class="stat-divider"></div>
       <div class="stat">
-        <span class="stat-number">5K+</span>
-        <span class="stat-label">Cups Served Monthly</span>
+        <span class="stat-num">5K+</span>
+        <span class="stat-label">Cups Monthly</span>
       </div>
+      <div class="stat-divider"></div>
       <div class="stat">
-        <span class="stat-number">4.9</span>
-        <span class="stat-label">Google Rating ★</span>
+        <span class="stat-num">4.9</span>
+        <span class="stat-label">Google Rating</span>
       </div>
+      <div class="stat-divider"></div>
       <div class="stat">
-        <span class="stat-number">3</span>
+        <span class="stat-num">3</span>
         <span class="stat-label">Years Brewing</span>
       </div>
     </div>
   </section>
 
-  <!-- Menu Highlights -->
+  <!-- Menu -->
   <section class="menu" id="menu">
     <div class="container">
       <div class="section-header">
-        <p class="section-tag">Our Best Sellers</p>
+        <p class="section-tag">Best Sellers</p>
         <h2>The Menu</h2>
-        <p>Curated selection of our most loved beverages</p>
       </div>
       <div class="menu-grid">
         <div class="menu-card">
-          <div class="menu-card-img" style="background: linear-gradient(135deg, #6F4E37, #C4A882)">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&h=400&fit=crop&q=80" alt="Signature Latte" loading="lazy" />
             <span class="menu-badge">Best Seller</span>
-            <div class="menu-icon">☕</div>
           </div>
           <div class="menu-card-body">
-            <h3>Signature Latte</h3>
-            <p>Double-shot espresso with velvety steamed milk, topped with our house-made caramel drizzle</p>
-            <span class="menu-price">Rp 42.000</span>
+            <div class="menu-card-top">
+              <h3>Signature Latte</h3>
+              <span class="menu-price">Rp 42K</span>
+            </div>
+            <p>Double-shot espresso, velvety milk, house caramel drizzle</p>
           </div>
         </div>
         <div class="menu-card">
-          <div class="menu-card-img" style="background: linear-gradient(135deg, #3E2723, #8D6E63)">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop&q=80" alt="Cold Brew" loading="lazy" />
             <span class="menu-badge">Popular</span>
-            <div class="menu-icon">🧊</div>
           </div>
           <div class="menu-card-body">
-            <h3>Cold Brew</h3>
-            <p>20-hour steeped cold brew, smooth and chocolatey with hints of dark cherry</p>
-            <span class="menu-price">Rp 38.000</span>
+            <div class="menu-card-top">
+              <h3>Cold Brew</h3>
+              <span class="menu-price">Rp 38K</span>
+            </div>
+            <p>20-hour steep, smooth chocolate with dark cherry notes</p>
           </div>
         </div>
         <div class="menu-card">
-          <div class="menu-card-img" style="background: linear-gradient(135deg, #5D4037, #A1887F)">
-            <div class="menu-icon">🌿</div>
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600&h=400&fit=crop&q=80" alt="Matcha Latte" loading="lazy" />
           </div>
           <div class="menu-card-body">
-            <h3>Matcha Latte</h3>
-            <p>Ceremonial-grade Uji matcha whisked with creamy oat milk — earthy, smooth, energizing</p>
-            <span class="menu-price">Rp 45.000</span>
+            <div class="menu-card-top">
+              <h3>Matcha Latte</h3>
+              <span class="menu-price">Rp 45K</span>
+            </div>
+            <p>Ceremonial Uji matcha with creamy oat milk</p>
           </div>
         </div>
         <div class="menu-card">
-          <div class="menu-card-img" style="background: linear-gradient(135deg, #4E342E, #795548)">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?w=600&h=400&fit=crop&q=80" alt="Espresso Tonic" loading="lazy" />
             <span class="menu-badge">New</span>
-            <div class="menu-icon">🫧</div>
           </div>
           <div class="menu-card-body">
-            <h3>Espresso Tonic</h3>
-            <p>Sparkling tonic water meets bold espresso — refreshingly bitter with a citrus twist</p>
-            <span class="menu-price">Rp 40.000</span>
+            <div class="menu-card-top">
+              <h3>Espresso Tonic</h3>
+              <span class="menu-price">Rp 40K</span>
+            </div>
+            <p>Sparkling tonic meets bold espresso, citrus twist</p>
           </div>
         </div>
+      </div>
+      <div class="menu-cta">
+        <a href="#" class="btn btn-outline-dark">View Full Menu</a>
       </div>
     </div>
   </section>
@@ -132,39 +149,38 @@
   <!-- About -->
   <section class="about" id="about">
     <div class="container about-grid">
-      <div class="about-image">
-        <div class="about-img-box">
-          <div class="about-img-placeholder">
-            <span>🫘</span>
-            <p>From Farm to Cup</p>
-          </div>
+      <div class="about-visual">
+        <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=800&h=1000&fit=crop&q=80" alt="Coffee Beans" class="about-img" />
+        <div class="about-float">
+          <span class="about-float-num">3</span>
+          <span class="about-float-text">Years of<br/>Craft</span>
         </div>
       </div>
       <div class="about-content">
         <p class="section-tag">Our Story</p>
-        <h2>Crafted with<br /><em>Passion & Purpose</em></h2>
-        <p>Started in 2023 from a tiny corner in Jakarta, Brewed Awakening was born from a simple belief: everyone deserves access to truly exceptional coffee.</p>
-        <p>We source our beans directly from farmers in Gayo, Toraja, and Flores — paying fair prices and building long-term relationships. Every batch is roasted in-house to unlock each bean's unique flavor profile.</p>
+        <h2>From Indonesian<br/><em>Highlands</em> to Your Cup</h2>
+        <p>Brewed Awakening started in 2023 from a tiny corner in Jakarta with one belief: everyone deserves truly exceptional coffee.</p>
+        <p>We source directly from farmers in <strong>Gayo</strong>, <strong>Toraja</strong>, and <strong>Flores</strong> — paying fair prices and building long-term relationships. Every batch is roasted in-house to unlock each bean's unique flavor.</p>
         <div class="about-features">
           <div class="about-feature">
-            <span>🌱</span>
+            <div class="about-feature-icon">🌱</div>
             <div>
               <h4>Direct Trade</h4>
-              <p>Fair prices to Indonesian farmers</p>
+              <p>Fair prices to local farmers</p>
             </div>
           </div>
           <div class="about-feature">
-            <span>🔥</span>
+            <div class="about-feature-icon">🔥</div>
             <div>
-              <h4>Small Batch Roasted</h4>
+              <h4>Small Batch</h4>
               <p>Fresh roasts every week</p>
             </div>
           </div>
           <div class="about-feature">
-            <span>♻️</span>
+            <div class="about-feature-icon">♻️</div>
             <div>
               <h4>Eco-Friendly</h4>
-              <p>Compostable cups & zero waste goal</p>
+              <p>Compostable cups, zero waste</p>
             </div>
           </div>
         </div>
@@ -176,25 +192,24 @@
   <section class="gallery" id="gallery">
     <div class="container">
       <div class="section-header">
-        <p class="section-tag">Vibes</p>
-        <h2>The Space</h2>
-        <p>Where coffee meets community</p>
+        <p class="section-tag">The Space</p>
+        <h2>Where Coffee Meets Community</h2>
       </div>
       <div class="gallery-grid">
         <div class="gallery-item gallery-tall">
-          <div class="gallery-placeholder">📸<br/>Cozy Interior</div>
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=800&fit=crop&q=80" alt="Cozy Interior" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <div class="gallery-placeholder">📸<br/>Latte Art</div>
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=400&fit=crop&q=80" alt="Latte Art" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <div class="gallery-placeholder">📸<br/>Bean Selection</div>
-        </div>
-        <div class="gallery-item gallery-wide">
-          <div class="gallery-placeholder">📸<br/>Our Roastery</div>
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&h=400&fit=crop&q=80" alt="Coffee Beans" loading="lazy" />
         </div>
         <div class="gallery-item">
-          <div class="gallery-placeholder">📸<br/>Outdoor Seating</div>
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop&q=80" alt="Espresso Pour" loading="lazy" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=600&h=400&fit=crop&q=80" alt="Cafe Vibes" loading="lazy" />
         </div>
       </div>
     </div>
@@ -204,26 +219,26 @@
   <section class="testimonials">
     <div class="container">
       <div class="section-header">
-        <p class="section-tag">What People Say</p>
-        <h2>Reviews</h2>
+        <p class="section-tag">Reviews</p>
+        <h2>What People Say</h2>
       </div>
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p>"Best specialty coffee in South Jakarta. Their Gayo single-origin is absolutely insane — rich, smooth, no bitterness at all."</p>
+          <p class="testimonial-text">"Best specialty coffee in South Jakarta. Their Gayo single-origin is insane — rich, smooth, zero bitterness."</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar">RA</div>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face&q=80" alt="Rizky" loading="lazy" />
             <div>
               <strong>Rizky A.</strong>
               <span>Regular since 2023</span>
             </div>
           </div>
         </div>
-        <div class="testimonial-card">
+        <div class="testimonial-card featured">
           <div class="testimonial-stars">★★★★★</div>
-          <p>"The cold brew here is on another level. I drive 30 minutes just for this. The space is perfect for working too — great WiFi & vibes."</p>
+          <p class="testimonial-text">"The cold brew is on another level. I drive 30 minutes for this. The space is perfect for working — great WiFi & vibes."</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar">SM</div>
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face&q=80" alt="Sarah" loading="lazy" />
             <div>
               <strong>Sarah M.</strong>
               <span>Freelance Designer</span>
@@ -232,9 +247,9 @@
         </div>
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <p>"Finally a coffee shop that takes Indonesian beans seriously. The espresso tonic is my go-to order. Staff is super friendly too!"</p>
+          <p class="testimonial-text">"Finally a coffee shop that takes Indonesian beans seriously. Espresso tonic is my go-to. Staff is super friendly!"</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar">DP</div>
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face&q=80" alt="Dimas" loading="lazy" />
             <div>
               <strong>Dimas P.</strong>
               <span>Coffee Enthusiast</span>
@@ -245,56 +260,67 @@
     </div>
   </section>
 
-  <!-- Contact / CTA -->
+  <!-- Contact -->
   <section class="contact" id="contact">
     <div class="container contact-grid">
       <div class="contact-info">
         <p class="section-tag">Visit Us</p>
-        <h2>Come Say Hello</h2>
-        <p>We'd love to brew something special for you.</p>
+        <h2>Come Say<br/><em>Hello</em></h2>
+        <p class="contact-desc">We'd love to brew something special for you. Drop by or reserve a table.</p>
         <div class="contact-details">
           <div class="contact-item">
-            <span>📍</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             <div>
               <strong>Location</strong>
               <p>Jl. Kemang Raya No. 42, Jakarta Selatan</p>
             </div>
           </div>
           <div class="contact-item">
-            <span>🕐</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             <div>
               <strong>Hours</strong>
-              <p>Mon–Fri: 7AM – 10PM<br/>Sat–Sun: 8AM – 11PM</p>
+              <p>Mon–Fri 7AM–10PM · Sat–Sun 8AM–11PM</p>
             </div>
           </div>
           <div class="contact-item">
-            <span>📞</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <div>
               <strong>Contact</strong>
-              <p>+62 812-3456-7890<br/>hello@brewedawakening.id</p>
+              <p>+62 812-3456-7890</p>
+              <p>hello@brewedawakening.id</p>
             </div>
           </div>
         </div>
         <div class="contact-socials">
-          <a href="#" class="social-link">IG</a>
-          <a href="#" class="social-link">TK</a>
-          <a href="#" class="social-link">WA</a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
         </div>
       </div>
       <div class="contact-form-wrapper">
         <form class="contact-form" id="contactForm">
           <h3>Reserve a Table</h3>
-          <input type="text" placeholder="Your Name" required />
+          <div class="form-row">
+            <input type="text" placeholder="Name" required />
+            <input type="tel" placeholder="Phone" />
+          </div>
           <input type="email" placeholder="Email" required />
-          <input type="tel" placeholder="Phone" />
-          <input type="date" />
-          <select>
-            <option value="">Number of Guests</option>
-            <option>1 person</option>
-            <option>2 people</option>
-            <option>3-4 people</option>
-            <option>5+ people</option>
-          </select>
+          <div class="form-row">
+            <input type="date" />
+            <select>
+              <option value="">Guests</option>
+              <option>1 person</option>
+              <option>2 people</option>
+              <option>3–4 people</option>
+              <option>5+ people</option>
+            </select>
+          </div>
           <textarea placeholder="Special requests..." rows="3"></textarea>
           <button type="submit" class="btn btn-primary btn-full">Reserve Now</button>
         </form>
@@ -304,20 +330,20 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-grid">
+    <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="#" class="logo">☕ Brewed<span>Awakening</span></a>
-        <p>Specialty coffee crafted with love in Jakarta. From farm to cup, every sip matters.</p>
+        <a href="#" class="logo">Brewed<span>.</span></a>
+        <p>Specialty coffee from Indonesian highlands.<br/>Crafted in Jakarta with love.</p>
       </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
+      <div class="footer-col">
+        <h4>Navigate</h4>
         <a href="#menu">Menu</a>
         <a href="#about">About</a>
         <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Visit Us</a>
       </div>
-      <div class="footer-links">
-        <h4>Follow Us</h4>
+      <div class="footer-col">
+        <h4>Follow</h4>
         <a href="#">Instagram</a>
         <a href="#">TikTok</a>
         <a href="#">WhatsApp</a>
